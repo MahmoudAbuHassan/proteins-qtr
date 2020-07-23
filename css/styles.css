@@ -4,6 +4,10 @@
     justify-content: center;   /* center ul container horizontally (optional) */
 }
 
+.navbar-brand {
+    transform: translateX(+19%);
+}
+
 .innabi {
     color:#790606;
 }
@@ -18,9 +22,15 @@ hr {
     background-color:#790606;
     width: 11.25rem;
 }
+.overlay {
+    background-color: rgba(0, 0, 0, 0.40);
+    border-radius: 5px;
+}
 
 /* MEDIA QUERIES */
-    .overlay {
-        background-color: rgba(0, 0, 0, 0.40);
-        border-radius: 5px;
+    @media (min-width: 1200px ) {
+        .container-fluid {
+            max-width: 1140px;
+        }
     }
+
