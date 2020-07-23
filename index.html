@@ -48,15 +48,32 @@
 
     <!-- Carousel -->
     <div id="carouselWithIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselWithIndicators" data-slide="0" class="active"></li>
+            <li data-target="#carouselWithIndicators" data-slide="1"></li>
+            <li data-target="#carouselWithIndicators" data-slide="2"></li>
+        </ol>
         <div class="carousel-inner">
             <div class="carousel-item carousel-image-1 active">
                 <img src="img/slider1.jpg" alt="First Slide" class="d-block w-100">
+                <div class="carousel-caption overlay">
+                    <h3>Join Us for Monday Savings</h3>
+                    <p>Discounted Pricing</p>
+                </div>
             </div>
             <div class="carousel-item carousel-image-2">
                 <img src="img/slider2.jpg" alt="Second Slide" class="d-block w-100">
+                <div class="carousel-caption overlay">
+                    <h3>Premium Protein</h3>
+                    <p>Special Protein Pricing</p>
+                </div>
             </div>
             <div class="carousel-item carousel-image-3">
                 <img src="img/slider3.jpg" alt="Third Slide" class="d-block w-100">
+                <div class="carousel-caption overlay">
+                    <h3>Delivered To Your Doorsteps!</h3>
+                    <p>By Proteins QTR</p>
+                </div>
             </div>
             <a href="#carouselWithIndicators" class="carousel-control-prev" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -67,10 +84,21 @@
                 <span class="sr-only">Next</span>
             </a>
             </div>
-        </div>
-    </div>
+    </div><!-- End of Carousel -->
 
-    <section id="placeholder" class="p-5 m-5"></section>
+    <!-- Content -->
+    <section id="content" class="p-4">
+        <div class="pb-3 pb-sm-2">
+            <p class="h6">Check out our list of Products</p>
+        </div>
+        <hr class="bg-secondary">
+        <div class="row mt-4 justify-content-start">
+            <div class="col-sm-6">
+                <h5>Our mosts popular items</h5>
+                <hr class="mm-hr-short">
+            </div>
+        </div>
+    </section><!-- End of Content -->
 
     <footer class="bg-light p-3 pt5">
         <ul class="list-inline text-uppercase text-center">
