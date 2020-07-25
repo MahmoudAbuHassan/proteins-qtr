@@ -1,0 +1,62 @@
+.navbar-nav {
+    display: flex;             /* establish flex container */
+    align-items: center;       /* center ul container vertically */
+    justify-content: center;   /* center ul container horizontally (optional) */
+}
+
+.innabi {
+    color:rgba(40, 4, 4, 1)
+}
+
+.navbar-brand{
+    transform: translateX(+20%);
+}
+
+hr {
+    height: 0.0625rem;
+}
+
+.mm-hr-short {
+    margin: 0;
+    height: 0.18rem;
+    background-color: rgb(48, 5, 5);
+    width: 11.25rem;
+}
+.overlay {
+    background-color: rgba(40, 4, 4, 0.8);
+    border-radius: 5px;
+}
+
+.card-header:first-child {
+    padding-bottom: 0;
+    padding-top: 2px;
+}
+
+.card-header:first-child{
+    font-family: 'Merriweather', serif; 
+}
+
+/* menu pages */
+.mm-hr-long{
+    margin: 2rem 0;
+    height: 0.18rem;
+    background-color: #ffffff;
+}
+
+.bg-innabi{
+    background-color: rgb(48, 5, 5);
+}
+
+.btn-danger{
+    background-color: rgb(69, 8, 8);
+    border-color: rgb(69, 8, 8);;
+}
+
+
+/* MEDIA QUERIES */
+    @media (min-width: 1200px ) {
+        .container-fluid {
+            max-width: 1140px;
+        }
+    }
+
