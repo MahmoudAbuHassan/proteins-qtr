@@ -1,3 +1,7 @@
+body {
+    font-family: 'Merriweather', serif;
+}
+
 .navbar-nav {
     display: flex;             /* establish flex container */
     align-items: center;       /* center ul container vertically */
@@ -19,7 +23,7 @@ hr {
 .mm-hr-short {
     margin: 0;
     height: 0.18rem;
-    background-color: rgb(48, 5, 5);
+    background-color: white;
     width: 11.25rem;
 }
 .overlay {
@@ -33,7 +37,7 @@ hr {
 }
 
 .card-header:first-child{
-    font-family: 'Merriweather', serif; 
+    font-family: 'Merriweather', sans-serif; 
 }
 
 /* menu pages */
@@ -52,6 +56,45 @@ hr {
     border-color: rgb(69, 8, 8);;
 }
 
+.horizLineHeader{
+    padding: 20px 0 5px 0;
+    line-height: 3;
+    text-align: center;
+    margin: 0 auto;
+    font-style: italic;
+
+}
+
+.one {
+    position: relative;
+    margin-top: 0;
+}
+
+.one:before {
+    content: "";
+    display: block;
+    border-top: solid 1px white;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+  }
+  
+  .one span {
+    background: rgb(48, 5, 5);
+    padding: 0 20px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .one after{
+    width: 125%;
+  }
+
+.asd{
+    font-size: 2rem;
+}
 
 /* MEDIA QUERIES */
     @media (min-width: 1200px ) {

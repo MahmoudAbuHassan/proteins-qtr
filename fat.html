@@ -10,55 +10,57 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-innabi">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <a href="index.html" class="d-lg-none navbar-brand mx-auto">
+                <img src="img/logo.png" alt="" width="140" height="87.5">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav text-uppercase mx-auto">
+                    <div class="nav-item navbar-item ">
+                        <a href="index.html active" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">Home<span class="sr-only"></span></a>
+                    </div>
+                    <div class="nav-item navbar-item">
+                        <a href="promotions.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">Promotions<span class="sr-only"></span></a>
+                    </div>
+                    <div class="nav-item navbar-item">
+                        <a href="proteins.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">Proteins<span class="sr-only"></span></a>
+                    </div>
+                    <div class="nav-item d-none d-lg-block">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="" width="140" height="87.5">
+                        </a>
+                    </div>
+                    <div class="nav-item navbar-item ">
+                        <a href="fat.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">Fat Burners<span class="sr-only"></span></a>
+                    </div>
+                    <div class="nav-item navbar-item ">
+                        <a href="essentials.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">Essentials<span class="sr-only"></span></a>
+                    </div>
+                    <div class="nav-item navbar-item ">
+                        <a href="pre.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">PreWorkout<span class="sr-only"></span></a>
+                    </div>
+                </ul>
+            </div>
+        </div> 
+    </nav><!-- End of Navigation -->
+
     <div class="container-fluid p-0">
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a href="index.html" class="d-lg-none navbar-brand mx-auto">
-                    <img src="img/proteins.jpg" alt="" width="140" height="87.5">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="navbar-nav text-uppercase mx-auto">
-                        <div class="nav-item navbar-item ">
-                            <a href="index.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">Home<span class="sr-only"></span></a>
-                        </div>
-                        <div class="nav-item navbar-item">
-                            <a href="promotions.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">Promotions<span class="sr-only"></span></a>
-                        </div>
-                        <div class="nav-item navbar-item">
-                            <a href="proteins.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">Proteins<span class="sr-only"></span></a>
-                        </div>
-                        <div class="nav-item d-none d-lg-block">
-                            <a href="index.html">
-                                <img src="img/proteins.jpg" alt="" width="140" height="87.5">
-                            </a>
-                        </div>
-                        <div class="nav-item navbar-item active">
-                            <a href="fat.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">Fat Burners<span class="sr-only"></span></a>
-                        </div>
-                        <div class="nav-item navbar-item ">
-                            <a href="essentials.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">Essentials<span class="sr-only"></span></a>
-                        </div>
-                        <div class="nav-item navbar-item ">
-                            <a href="pre.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">PreWorkout<span class="sr-only"></span></a>
-                        </div>
-                    </ul>
-                </div>
-            </div> 
-        </nav><!-- End of Navigation -
         
         <!-- Pic & Description -->
         <section class="bg-innabi text-light">
             <div class="row no-gutters">
                 <div class="row no-gutters">
-                    <div class="col-lg-6">
-                        <img src="img/fatburner/fat0.jpg" alt="" class="img-fluid">
+                    <div class="col-lg-6 col-md-6">
+                        <img src="img/fatburner/fat0nobg.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-6 p-5">
+                    <div class="col-lg-6 col-md-6 p-5">
                         <h1>FAT BURNERS</h1>
                         <hr class="mm-hr-long my-2 my-lg-3">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam delectus a, illo voluptate, nulla deserunt, possimus accusamus id minus omnis pari</p>
@@ -69,98 +71,109 @@
         </section>
 
         <!-- Content -->
-        <section id="content" class="p-4 px-xl-0">
+        <section id="content" class="px-xl-0 p-4">
+
+            <!-- Header -->
+            <div class="horizLineHeader text-white bg-innabi">
+                <h2 class="one"><span>Products</span></h2>
+            </div>
 
            <!-- Cards -->
            <div class="row">
             <div class="col-12 col-sm-6 col-md-4 py-3">
                 <div class="card">
+                    <div class="card-header text-center innabi">
+                        <h4>MP</br>CLA</h4>
+                    </div>
                     <a href="https://iwtsp.com/97450173164"><img src="img/fatburner/fat1.jpg" alt=""  class="img-fluid card-img-top"></a>
                     <div class="card-footer text-center">
-                        <h4>MP</h4>
-                        <h4>CLA</h4>
                         <p>Health benefits for skin and weight loss, is possible with the best CLA product in the market!</p>
                         <p>90 Tabs</p>
                         <p>150 QR</p>
-                        <a href="https://iwtsp.com/97450173164" class="innabi"><button class="btn btn-danger">Order Now</button></a>
+                        <a href="https://iwtsp.com/97450173164" class="innabi"><button class="btn btn-danger">Order Now  <i class="fa fa-lg fa-whatsapp" aria-hidden="true"></i></button></a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 py-3">
                 <div class="card">
+                    <div class="card-header text-center innabi">
+                        <h4>Allmax </br>Rapidcuts</h4>
+                    </div>
                     <a href="https://iwtsp.com/97450173164"><img src="img/fatburner/fat2.jpg" alt=""  class="img-fluid card-img-top"></a>
                     <div class="card-footer text-center">
-                        <h4>Allmax</h4>
-                        <h4>Rapidcuts</h4>
                         <p>One of the best and most powerful fatburners in the market!</p>
                         <p>90 Tabs</p>
                         <p>180 QR</p>
-                        <a href="https://iwtsp.com/97450173164" class="innabi"><button class="btn btn-danger">Order Now</button></a>
+                        <a href="https://iwtsp.com/97450173164" class="innabi"><button class="btn btn-danger">Order Now <i class="fa fa-lg fa-whatsapp" aria-hidden="true"></i></button></a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 py-3">
                 <div class="card">
+                    <div class="card-header text-center innabi">
+                        <h4>JNX</br>THE RIPPER</h4>
+                    </div>
                     <a href="https://iwtsp.com/97450173164"><img src="img/fatburner/fat3.jpg" alt=""  class="img-fluid card-img-top"></a>
                     <div class="card-footer text-center">
-                        <h4>JNX </h4>
-                        <h4>The Ripper</h4>
                         <p>A very strong fatburner + pre-workout 2x1 deal!</p>
                         <p>30 Servings</p>
                         <p>180 QR</p>
-                        <a href="https://iwtsp.com/97450173164" class="innabi"><button class="btn btn-danger">Order Now</button></a>
+                        <a href="https://iwtsp.com/97450173164" class="innabi"><button class="btn btn-danger">Order Now <i class="fa fa-lg fa-whatsapp" aria-hidden="true"></i></button></a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 py-3">
                 <div class="card">
+                    <div class="card-header text-center innabi">
+                        <h4>MHP</br>Xpel</h4>
+                    </div>
                     <a href="https://iwtsp.com/97450173164"><img src="img/fatburner/fat4.jpg" alt=""  class="img-fluid card-img-top"></a>
                     <div class="card-footer text-center">
-                        <h4>MHP</h4>
-                        <h4>Xpel</h4>
                         <p>Rapid Water Loss & Support Muscle Definition</p>
                         <p>80 Caps</p>
                         <p>140 QR</p>
-                        <a href="https://iwtsp.com/97450173164" class="innabi"><button class="btn btn-danger">Order Now</button></a>
+                        <a href="https://iwtsp.com/97450173164" class="innabi"><button class="btn btn-danger">Order Now <i class="fa fa-lg fa-whatsapp" aria-hidden="true"></i></button></a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 py-3">
                 <div class="card">
+                    <div class="card-header text-center innabi">
+                        <h4>Bpi</br>Shredding Gel</h4>
+                    </div>
                     <a href="https://iwtsp.com/97450173164"><img src="img/fatburner/fat5.jpg" alt=""  class="img-fluid card-img-top"></a>
                     <div class="card-footer text-center">
-                        <h4>Bpi</h4>
-                        <h4>Shredding Gel</h4>
                         <p>One of the best toning creams in market to lose stubborn fats!</p>
                         <p>8oz (Large)</p>
                         <p>240 QR</p>
-                        <a href="https://iwtsp.com/97450173164" class="innabi"><button class="btn btn-danger">Order Now</button></a>
+                        <a href="https://iwtsp.com/97450173164" class="innabi"><button class="btn btn-danger">Order Now <i class="fa fa-lg fa-whatsapp" aria-hidden="true"></i></button></a>
                     </div>
                 </div>
             </div>
         </div><!-- End of Cards -->
-    
-        </section><!-- End of Content -->        
-
-        <footer class="bg-innabi text-white p-3 pt5">
-            <h6 class="p-1 text-center">Contact Us:</h6>
-            <ul class="list-inline text-center">
-                <li class="list-inline-item mx-2">
-                    <a href="https://iwtsp.com/97450173164" class="text-white">
-                        <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item mx-2">
-                    <a href="https://www.instagram.com/proteins.qtr/" class="text-white">
-                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
-            <div class="row justify-content-center font-weight-light">
-                Copyright © 2020 Proteins.QTR - All Rights Reserved.
-            </div>
-        </footer>
+        </section><!-- End of Content -->
     </div><!-- End of Main Container -->
+
+    <div style="padding-top: .1rem !important" class="bg-white"></div>
+    <footer class="bg-innabi text-white p-3 pt5">
+        <h6 class="p-1 text-center">Contact Us:</h6>
+        <ul class="list-inline text-center">
+            <li class="list-inline-item mx-2">
+                <a href="https://iwtsp.com/97450173164" class="text-white">
+                    <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="list-inline-item mx-2">
+                <a href="https://www.instagram.com/proteins.qtr/" class="text-white">
+                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="row justify-content-center font-weight-light">
+            Copyright © 2020 Proteins.QTR - All Rights Reserved.
+        </div>
+    </footer>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
